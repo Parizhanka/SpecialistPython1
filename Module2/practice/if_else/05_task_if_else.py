@@ -3,4 +3,16 @@
 # Формат входных данных: дано целое число m (1 ≤ m ≤ 12).
 # Формат выходных данных: требуется вывести название времени года
 
-# TODO: your code here
+number = int(input("Введите номер месяца: "))
+
+if number>12:
+    result = "Номер месяца введен неверно"
+elif number >= 3 and number <=5:
+    result = "Весна"
+elif number >= 6 and number <=8:
+    result = "Лето"
+elif number >= 9 and number <=11:
+    result = "Осень"    
+else:
+    result = "Зима"
+print("Время года: ",result) 
