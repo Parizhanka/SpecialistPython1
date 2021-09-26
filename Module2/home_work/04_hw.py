@@ -14,3 +14,12 @@
 #    #
 #    #
 ######
+
+size = int(input("Размер стороны квадрата= "))
+i = 1
+while i <= size:
+    if i == 1 or i == size:
+        print("#"*size)
+    else:
+        print("#"+" "*(size-2)+"#")
+    i += 1
