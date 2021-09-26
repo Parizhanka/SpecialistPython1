@@ -4,5 +4,20 @@
 
 # Пример строки перевертыша: "И темен город. Мороз узором дорог не мети."
 
-# TODO: your code here
+text = input("Введите строку ")
+i = 1
+count_num = 0
+text = text.replace(" ", "")
+text = text.lower()
+
+while i <= len(text):
+    letter_start = text[i-1]
+    letter_end = text[-i]
+    if letter_start == letter_end:
+        count_num += 1
+    i += 1
+if count_num == len(text):
+    print("Строка перевертыш")
+else:
+    print("Строка НЕ перевертыш")
 
